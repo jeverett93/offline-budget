@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // syncing database with mongoose
-const MONGODB_URI = "mongodb+srv://jeverett93:January1993@offlinedb.yjq6k.mongodb.net/<dbname>?retryWrites=true&w=majority";
+// const MONGODB_URI = "mongodb+srv://jeverett93:January1993@offlinedb.yjq6k.mongodb.net/<dbname>?retryWrites=true&w=majority";
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
